@@ -353,10 +353,11 @@ progname_priv() ->
 
 progname() ->
     % Is there a proper way of getting App-Name in this context?
-    case code:priv_dir( ?MODULE ) of
-        {error, bad_name} -> progname_ebin();
-        _ -> progname_priv()
-    end.
+    % case code:priv_dir( ?MODULE ) of
+    %     {error, bad_name} -> progname_ebin();
+    %     _ -> progname_priv()
+    % end.
+    "procket".
 
 %% Protocol family (aka domain)
 family(unspec) -> 0;
