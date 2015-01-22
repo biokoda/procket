@@ -357,7 +357,7 @@ progname() ->
     %     {error, bad_name} -> progname_ebin();
     %     _ -> progname_priv()
     % end.
-    "procket".
+    "./procket".
 
 %% Protocol family (aka domain)
 family(unspec) -> 0;
