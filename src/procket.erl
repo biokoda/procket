@@ -74,7 +74,7 @@
 -on_load(on_load/0).
 
 on_load() ->
-    erlang:load_nif("procket", []).
+    erlang:load_nif("./procket", []).
 
 
 %%--------------------------------------------------------------------
